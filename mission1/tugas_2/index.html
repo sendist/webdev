@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission 2</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="f-source-sans">
+    <div class="bg-[--light-grey]">
+      <header class="bg-[--light-grey] min-[832px]:flex justify-between items-center min-[832px]: max-w-[1180px] mx-auto" >
+        <div class="py-4 px-8">
+          <a>
+            <img src="assets/hackdesign.svg" alt="Hack Design" class="w-[200px]" />
+          </a>
+        </div>
+
+        <!-- Navbar untuk ukuran lebar layar < 640px -->
+        <nav class="sm:hidden border-t-2 border-b-2 border-slate-200 py-2 mt-2 text-lg space-x-8">
+          <a class="font-bold text-[--color-red] ml-4" href="" >Become a Patron</a >
+          <a class="text-slate-400" href="">Lessons</a>
+          <a class="text-slate-400" href="">Toolkit</a>
+          <a class="text-slate-400" href="">Sign In</a>
+        </nav>
+
+        <!-- Navbar untuk ukuran lebar layar >= 640px -->
+        <nav class="hidden sm:block space-x-8 text-lg mt-2 px-8 min-[832px]:mr-8" >
+          <a class="text-slate-400" href="">View all lessons</a>
+          <a class="text-slate-400" href="">Toolkit</a>
+        </nav>
+      </header>
+
+      <section class="bg-[--light-grey] py-8 max-w-[1180px] mx-auto">
+        <header>
+          <h1 class="f-source-serif text-[26px] text-center mx-8 min-[832px]:text-6xl/[75px] min-[832px]:px-24" >
+            An <span class="font-semibold text-[--color-red]" >easy to follow design course</span > for people who do amazing things.
+          </h1>
+        </header>
+      </section>
+
+      <section class="bg-[--light-grey] py-8 px-8 max-w-[1180px] mx-auto">
+        <p class="text-slate-400 text-center text-lg min-[832px]:text-[22px] min-[832px]:mx-48" >
+          Receive a design lesson in your inbox each week, hand crafted by a
+          design pro. Learn at your own pace, and apply it to your real life
+          work.
+        </p>
+
+        <form class="flex justify-center mt-6 min-[832px]:mx-64" action="">
+          <input
+            class="h-[52px] drop-shadow-md w-full rounded-l px-5 focus:ring-blue-400 focus:ring-2 focus:outline-none"
+            type="text" placeholder="Email address"
+          />
+          <button class="bg-[--color-green] drop-shadow-md px-4 shrink-0 text-white font-semibold text-lg rounded-r" >
+            Get started
+          </button>
+        </form>
+      </section>
+
+      <section class="bg-[--light-grey] py-8 max-w-[1180px] mx-auto">
+        <div class="grid grid-cols-1 min-[832px]:grid-cols-3 space-y-20 min-[832px]:space-y-0" >
+          <div class="flex flex-col items-center text-center px-6 gap-5">
+            <img src="assets/microscope.svg" alt="" />
+            <h2 class="text-[26px] text-[--color-dark-blue]">
+              Curated Resources
+            </h2>
+            <p class="text-lg text-[--text-grey]">
+              Don't know where to start? We’ve enlisted the world’s top
+              designers to craft lessons for learning the tools, techniques &
+              terminology of good design.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center px-6 gap-5">
+            <img class="mt-6" src="assets/gamepad.svg" alt="" />
+            <h2 class="text-[26px] text-[--color-dark-blue]">
+              Interactive Content
+            </h2>
+            <p class="text-lg text-[--text-grey]">
+              Learn by doing. Play with design puzzles and challenging games as
+              you learn. Test your skills and explore possibilities.
+            </p>
+          </div>
+          <div class="flex flex-col items-center text-center px-6 gap-5">
+            <img class="mt-6" src="assets/pencil.svg" alt="" />
+            <h2 class="text-[26px] text-[--color-dark-blue]">
+              Awesome Design Tools
+            </h2>
+            <p class="text-lg text-[--text-grey]">
+              We’ve curated a list of the best design tools to help you figure
+              out which ones to learn, and discover new and helpful tools you
+              may have never heard of.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="mt-16 mb-8 max-w-[1180px] mx-auto">
+      <h1 class="text-[50px]/[62.5px] text-[--color-dark-blue] f-source-serif font-semibold text-center mx-5 mb-4" >
+        Meet your instructors
+      </h1>
+      <p class="text-orange-400 text-center">View the complete list</p>
+
+      <div class="grid grid-cols-1 p-4 min-[832px]:grid-cols-2">
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/daffa.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Daffa Raihandika
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/delvito.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Delvito Rahim
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/egi.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">Egi Satria</h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/gian.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Gian Sandrova
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/jovan.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Jovan Shelomo
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/rachmat.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Rachmat Purwa
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/rafi.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Muhammad Rafi
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/raka.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Raka Mahardika
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/regi.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">Regi Purnama</h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/reza.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">Reza Ananta</h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 mb-1 self-start rounded-full" src="assets/rivaldo.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2 text-[--color-dark-blue]">
+              Rivaldo Fauzan
+            </h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+        <div class="grid-rows-2 p-4 min-[832px]:flex">
+          <img class="mr-8 self-start rounded-full" src="assets/rofaul.jpg" alt="" width="100px" height="100px" />
+          <div>
+            <h2 class="text-2xl mb-2">Rofaul Akrom</h2>
+            <p class="mb-4 text-[--text-grey]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              earum ipsam aliquam pariatur enim! Voluptas quidem vero, provident
+              quasi voluptatem molestiae aspernatur mollitia esse eius odio
+              enim! Qui, voluptatum delectus?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 min-[832px]:max-w-[590px] mx-auto">
+      <aside class="p-8 bg-[--light-grey]">
+        <h2 class="text-[22px] font-semibold">
+          Join 400,000+ others in learning design
+        </h2>
+        <p class="text-lg text-[--text-grey]">
+          Receive a design lesson each week, crafted by a design pro.
+        </p>
+
+        <form class="flex justify-center mt-6 placeholder-[--text-grey]" action="" >
+          <input
+            class="h-[52px] drop-shadow-md w-full rounded-l px-5 focus:ring-blue-400 focus:ring-2 focus:outline-none"
+            type="text" placeholder="Email address"
+          />
+          <button class="bg-[--color-green] drop-shadow-md px-4 shrink-0 text-white text-lg font-semibold rounded-r" >
+            Get started
+          </button>
+        </form>
+      </aside>
+    </section>
+
+    <footer class="px-8 max-w-[1180px] mx-auto">
+      <div class="flex justify-between pt-4 pb-8 border-t text-[--text-grey]">
+        <p class="inline">© 2022</p>
+        <nav class="inline ms-auto space-x-8">
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Curators</a>
+          <a href="">Legal</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
