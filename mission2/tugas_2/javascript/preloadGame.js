@@ -37,13 +37,93 @@ class preloadGame extends Phaser.Scene{
     });
 
     this.anims.create({
-      key: "cat_idle",
+      key: "cat_idle1",
       frames: this.anims.generateFrameNumbers("cat", {
         start: 8,
         end: 15
       }),
       frameRate: 8,
-      repeat: -1
+      repeat: 5
+    });
+
+    this.anims.create({
+      key: "cat_idle2",
+      frames: this.anims.generateFrameNumbers("cat", {
+        start: 248,
+        end: 251
+      }),
+
+      frames: [
+        { key: "cat", frame: 168 },
+        { key: "cat", frame: 169 },
+        { key: "cat", frame: 170 },
+        { key: "cat", frame: 171 },
+        { key: "cat", frame: 248 },
+        { key: "cat", frame: 249 },
+        { key: "cat", frame: 250 },
+        { key: "cat", frame: 251 },
+      ],
+      frameRate: 8,
+      repeat: 2
+    });
+
+    this.anims.create({
+      key: "cat_idle3",
+      frames: [
+        { key: "cat", frame: 168 },
+        { key: "cat", frame: 169 },
+        { key: "cat", frame: 170 },
+        { key: "cat", frame: 171 },
+        { key: "cat", frame: 256 },
+        { key: "cat", frame: 257 },
+        { key: "cat", frame: 258 },
+        { key: "cat", frame: 259 },
+        { key: "cat", frame: 256 },
+        { key: "cat", frame: 257 },
+        { key: "cat", frame: 258 },
+        { key: "cat", frame: 259 },
+        { key: "cat", frame: 256 },
+        { key: "cat", frame: 257 },
+        { key: "cat", frame: 258 },
+        { key: "cat", frame: 259 },
+        { key: "cat", frame: 256 },
+        { key: "cat", frame: 257 },
+        { key: "cat", frame: 258 },
+        { key: "cat", frame: 259 },
+        { key: "cat", frame: 176 },
+        { key: "cat", frame: 177 },
+        { key: "cat", frame: 178 },
+        { key: "cat", frame: 179 },
+      ],
+        
+      frameRate: 8,
+      repeat: 0
+    });
+
+    this.anims.create({
+      key: "cat_idle4",
+      frames : [
+        { key: "cat", frame: 352 },
+        { key: "cat", frame: 353 },
+        { key: "cat", frame: 354 },
+        { key: "cat", frame: 355 },
+        { key: "cat", frame: 360 },
+        { key: "cat", frame: 361 },
+        { key: "cat", frame: 362 },
+        { key: "cat", frame: 363 },
+      ],
+      frameRate: 8,
+      repeat: 0
+    });
+
+    this.anims.create({
+      key: "cat_respawn",
+      frames: this.anims.generateFrameNumbers("cat", {
+        start: 296,
+        end: 303
+      }),
+      frameRate: 8,
+      repeat: 0
     });
 
     this.anims.create({
