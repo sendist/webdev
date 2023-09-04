@@ -1,5 +1,5 @@
 let config = {
-  width: screen.width,
+  width: window.innerWidth,
   height: 540,
   backgroundColor: 0x000000,
   scene: [preloadGame, playGame],

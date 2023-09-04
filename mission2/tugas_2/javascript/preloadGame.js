@@ -117,6 +117,29 @@ class preloadGame extends Phaser.Scene{
     });
 
     this.anims.create({
+      key: "cat_glance",
+      frames: [
+        { key: "cat", frame: 200 },
+        { key: "cat", frame: 201 },
+        { key: "cat", frame: 202 },
+        { key: "cat", frame: 203 },
+        { key: "cat", frame: 208 },
+        { key: "cat", frame: 209 },
+        { key: "cat", frame: 210 },
+        { key: "cat", frame: 211 },
+        { key: "cat", frame: 216 },
+        { key: "cat", frame: 217 },
+        { key: "cat", frame: 218 },
+        { key: "cat", frame: 219 },
+        { key: "cat", frame: 120 },
+        { key: "cat", frame: 121 },
+        { key: "cat", frame: 122 },
+        { key: "cat", frame: 123 },
+      ],
+      frameRate: 8,
+      repeat: 0
+    })
+    this.anims.create({
       key: "cat_respawn",
       frames: this.anims.generateFrameNumbers("cat", {
         start: 296,

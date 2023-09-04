@@ -100,8 +100,10 @@ class playGame extends Phaser.Scene {
   detectJump() {
     if((this.isJumpTriggered()) && this.cat.anims.currentAnim.key != "cat_jump" && this.cat.anims.currentAnim.key != "cat_death") {
       this.cat.play("cat_jump");
+      this.cat.y -= 20;
 			this.cat.body.setCircle(8, 10, 11);
       this.cat.once("animationcomplete", () => {
+        this.cat.y += 20;
 				this.cat.body.setCircle(8, 10, 18);
         this.cat.play("cat_run1");
       }
@@ -166,7 +168,6 @@ class playGame extends Phaser.Scene {
 		this.porcupine.x = game.config.width + Phaser.Math.Between(0, 400);
 		this.porcupine2.x = game.config.width + Phaser.Math.Between(800, 1200);
 		this.porcupine3.x = game.config.width + Phaser.Math.Between(1600, 2000);
-		console.log(this.porcupine.x, this.porcupine2.x, this.porcupine3.x)
     this.cat.play("cat_respawn")
     this.cat.once("animationcomplete", () => {
       this.playIdle();
@@ -178,11 +179,13 @@ class playGame extends Phaser.Scene {
     if(this.cat.anims.currentAnim.key != "cat_idle1") {
       this.cat.play("cat_idle1");
     } else {
-      let randomIdle = Phaser.Math.Between(0, 1);
-      if(randomIdle == 0) {
+      let randomIdle = Phaser.Math.Between(0, 6);
+      if(randomIdle == 0 || randomIdle == 3 || randomIdle == 5) {
         this.cat.play("cat_idle3");
       } else if(randomIdle == 1) {
         this.cat.play("cat_idle4");
+      } else if(randomIdle == 2 || randomIdle == 4 || randomIdle == 6) {
+        this.cat.play("cat_glance");
       }
     }
   }
