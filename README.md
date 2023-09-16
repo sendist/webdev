@@ -10,5 +10,5 @@ Repository Mata Kuliah Pengembangan Web
 - Tautan Tugas 2: https://sendist.github.io/webdev/mission2/tugas_2/  
 
 ## Special Mission
-Screenshot:
-![Screenshot Special Mission](/Special Mission/screenshot_app.png)
+Screenshot:  
+![Screenshot Special Mission](/Special%20Mission/screenshot_app.png)
